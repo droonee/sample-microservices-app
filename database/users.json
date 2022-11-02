@@ -1,0 +1,17 @@
+{
+    "usera": {
+        "id":1,
+        "name":"User A",
+        "verified":1
+    },
+    "userb": {
+        "id":2,
+        "name":"User B",
+        "verified":1
+    },
+    "userc": {
+        "id":4,
+        "name":"User C",
+        "verified":0
+    }
+}
