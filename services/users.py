@@ -6,8 +6,6 @@ import simplejson as json
 app = Flask(__name__)
 
 database_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-print(database_path)
-print("after print of database path")
 
 with open("{}/database/users.json".format(database_path), "r") as f:
     usr = json.load(f)
@@ -26,7 +24,6 @@ def users():
 def user_data(username):
     if username not in usr:
         return "Not found"
-
     return jsonify(usr[username])
 
 @app.route('/users/<username>/lists', methods=['GET'])
